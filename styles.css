@@ -1,0 +1,101 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.cover {
+    height: 380px;
+    width: 300px;
+    border-radius: 10px;
+    background: transparent;
+    position: relative;
+}
+.cover:hover {
+    background: rgba(0, 0, 0, 0.65);
+}
+.card {
+    height: 380px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('https://petervirtue.com/assets/pvbackground.png')
+        center center no-repeat;
+    background-size: 300px;
+}
+.card:hover {
+    background-size: 600px;
+}
+.card:hover h2, .card:hover h3, .card:hover h4 {
+    opacity: 1;
+}
+.card:hover i {
+    opacity: 1;
+}
+h2 {
+    color: #fff;
+    margin: 20px 20px 0 20px;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+h3, h4 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 5px 20px;
+    opacity: 0;
+    transition: opacity 1s; 
+}
+h3 {
+    font-size: 1em;
+}
+h4 {
+    font-size: 0.8em;
+}
+.icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    transition: all 0.2s;
+}
+.icons a:hover {
+    color: #646464;
+    fill: #646464;
+}
+i {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.icons {
+    position: absolute;
+    height: 160px;
+    top: 200px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
